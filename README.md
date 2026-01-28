@@ -36,3 +36,8 @@ Hero portrait files:
 
 ## Theme
 A light/dark toggle is included (button in the header). The choice is saved in localStorage.
+
+
+## Dual portrait
+- Light mode uses `assets/img/portrait-color.*`
+- Dark mode uses `assets/img/portrait-bw.*`

@@ -29,7 +29,7 @@
           <a href="#music">Music</a>
           <a href="#contact">Contact</a>
         </div>
-        <button class="theme-toggle" type="button" aria-label="Toggle color theme" title="Toggle theme">Theme</button>
+        <button class="theme-toggle" type="button" aria-label="Toggle color theme" title="Toggle theme">Dark</button>
       </nav>
     </div>
   </header>
@@ -56,10 +56,14 @@
           </div>
         </div>
 
-        <div class="hero-photo">
-          <picture>
-            <source srcset="assets/img/portrait.webp" type="image/webp" />
-            <img src="assets/img/portrait.jpg" alt="Portrait photo of Gianluca Guidi" loading="lazy" />
+        <div class="hero-photo" aria-label="Portrait">
+          <picture class="portrait portrait-light">
+            <source srcset="assets/img/portrait-color.webp" type="image/webp" />
+            <img src="assets/img/portrait-color.jpg" alt="Portrait photo of Gianluca Guidi" loading="lazy" />
+          </picture>
+          <picture class="portrait portrait-dark">
+            <source srcset="assets/img/portrait-bw.webp" type="image/webp" />
+            <img src="assets/img/portrait-bw.jpg" alt="Portrait photo of Gianluca Guidi (black and white)" loading="lazy" />
           </picture>
         </div>
       </div>

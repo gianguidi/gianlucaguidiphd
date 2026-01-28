@@ -43,8 +43,7 @@
     }
   }
 
-  const initialTheme = getPreferredTheme();
-  applyTheme(initialTheme);
+  applyTheme(getPreferredTheme());
 
   if (themeBtn) {
     themeBtn.addEventListener("click", () => {
