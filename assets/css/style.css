@@ -5,7 +5,7 @@
   --muted:#545454;
   --border:rgba(0,0,0,.12);
   --panel:#ffffff;
-  --accent:#2b6cb0; /* calm blue accent */
+  --accent: #2563eb;
   --max: 980px;
 }
 
@@ -16,7 +16,7 @@
   --muted:rgba(245,245,245,.70);
   --border:rgba(245,245,245,.16);
   --panel:#0c0c0c;
-  --accent:#cfcfcf; /* nearly monochrome */
+  --accent: #93c5fd;
 }
 
 *{box-sizing:border-box}
@@ -72,6 +72,8 @@ p{margin:0 0 12px}
 }
 
 .brand{
+  color: var(--text);
+
   font-family:"Source Serif 4", ui-serif, Georgia, "Times New Roman", Times, serif;
   font-weight: 700;
   font-size: 18px;
@@ -118,6 +120,7 @@ p{margin:0 0 12px}
   align-items:start;
 }
 .eyebrow{
+  font-size: 18px;
   color: var(--muted);
   font-weight: 650;
   margin: 0 0 8px;
@@ -146,10 +149,12 @@ p{margin:0 0 12px}
   border: 1px solid var(--border);
   padding: 10px;
 }
+.portrait{display:block}
 .portrait img{display:block; width:100%; height:auto}
+.portrait-light{display:block}
 .portrait-dark{display:none}
-[data-theme="dark"] .portrait-dark{display:block}
-[data-theme="dark"] .portrait-light{display:none}
+html[data-theme="dark"] .portrait-dark{display:block}
+html[data-theme="dark"] .portrait-light{display:none}
 
 /* Content */
 .prose{max-width: 78ch}
@@ -246,3 +251,4 @@ p{margin:0 0 12px}
   .nav-links.show{display:flex}
   .brand{max-width: 70vw; overflow:hidden; text-overflow:ellipsis}
 }
+.brand:visited{color: var(--text)}
